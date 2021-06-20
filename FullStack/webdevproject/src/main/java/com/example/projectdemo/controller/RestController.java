@@ -22,7 +22,7 @@ public class RestController {
 	@Transactional
 	public String registerUser(@RequestBody User user) {
 		service.saveMyUser(user);
-		return "Hello"+ user.getFirstname()+  "Your registration is succesfull";
+		return "Hello" + user.getFirstname() +  "Your registration is succesfull";
 		
 	}
 	@GetMapping("/all-users")
